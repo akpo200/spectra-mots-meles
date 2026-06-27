@@ -1,0 +1,15 @@
+{
+  "automatic": [
+    { "progress": 10, "title": "TRANSMISSION 01 — 10%", "body": "Vous progressez, agents. L'archive commence à livrer ses secrets." },
+    { "progress": 20, "title": "TRANSMISSION 02 — 20%", "body": "Un des mots que vous cherchez n'existe pas. Méfiez-vous des fausses pistes." },
+    { "progress": 30, "title": "TRANSMISSION 03 — 30%", "body": "La Directrice observe. Certaines équipes avancent plus vite que vous." },
+    { "progress": 50, "title": "TRANSMISSION 04 — 50%", "body": "La moitié du rapport répond. L'autre moitié résiste encore." },
+    { "progress": 80, "title": "TRANSMISSION 05 — 80%", "body": "Le signal FESTIN converge. Ne faites plus confiance au silence." },
+    { "progress": 100, "title": "TRANSMISSION FINALE", "body": "Transmission reconstituée. Attendez les instructions de la Directrice." }
+  ],
+  "manualTemplates": [
+    "Ralentissez et vérifiez vos dépendances.",
+    "La zone active n'est pas celle que vous croyez.",
+    "Indice autorisé : cherchez une trahison biblique."
+  ]
+}

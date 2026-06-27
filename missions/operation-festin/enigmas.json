@@ -1,0 +1,980 @@
+{
+  "enigmas": [
+    {
+      "id": "e-liberation",
+      "wordId": "liberation",
+      "text": "Ce que cherche tout peuple opprimé.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-architecture",
+      "wordId": "architecture",
+      "text": "L'art de concevoir et construire des espaces.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-territoire",
+      "wordId": "territoire",
+      "text": "Une zone délimitée appartenant à une autorité.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-ambassade",
+      "wordId": "ambassade",
+      "text": "Le bâtiment officiel représentant un pays à l'étranger.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-ultimatum",
+      "wordId": "ultimatum",
+      "text": "Une exigence finale. Après, c'est la guerre.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-patrimoine",
+      "wordId": "patrimoine",
+      "text": "L'héritage transmis de génération en génération.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-equinoxe",
+      "wordId": "equinoxe",
+      "text": "Le jour où la nuit et le jour durent exactement la même durée.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-enigme",
+      "wordId": "enigme",
+      "text": "Une question dont la réponse est cachée.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-souverain",
+      "wordId": "souverain",
+      "text": "Celui qui détient le pouvoir suprême.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-topographie",
+      "wordId": "topographie",
+      "text": "L'étude et la représentation du relief d'un terrain.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-diplomatie",
+      "wordId": "diplomatie",
+      "text": "L'art de négocier entre nations sans recourir à la force.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-aqueduc",
+      "wordId": "aqueduc",
+      "text": "Construction romaine permettant de transporter l'eau sur de longues distances.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-navigation",
+      "wordId": "navigation",
+      "text": "L'art de se déplacer sur l'eau ou dans les airs.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-sanctuaire",
+      "wordId": "sanctuaire",
+      "text": "Un lieu sacré ou protégé. Un refuge.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-volcan",
+      "wordId": "volcan",
+      "text": "Une montagne qui crache du feu.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-observatoire",
+      "wordId": "observatoire",
+      "text": "Un lieu équipé pour scruter le ciel.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-trajectoire",
+      "wordId": "trajectoire",
+      "text": "Le chemin suivi par un objet en mouvement.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-renaissance",
+      "wordId": "renaissance",
+      "text": "Période de renouveau culturel en Europe entre le XIVe et XVIIe siècle.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-ecosysteme",
+      "wordId": "ecosysteme",
+      "text": "L'ensemble des êtres vivants et leur environnement en interaction.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-cartographie",
+      "wordId": "cartographie",
+      "text": "L'art de dessiner des cartes.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-expedition",
+      "wordId": "expedition",
+      "text": "Un voyage organisé vers un lieu difficile d'accès.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-longitude",
+      "wordId": "longitude",
+      "text": "Coordonnée géographique est-ouest.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-latitude",
+      "wordId": "latitude",
+      "text": "Coordonnée géographique nord-sud.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-urbanisme",
+      "wordId": "urbanisme",
+      "text": "La science de l'organisation des villes.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-luminescence",
+      "wordId": "luminescence",
+      "text": "L'émission de lumière par un corps sans chaleur.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-eclipse",
+      "wordId": "eclipse",
+      "text": "Quand un astre en cache un autre.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-denomination",
+      "wordId": "denomination",
+      "text": "Le nom donné à quelque chose.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-erosion",
+      "wordId": "erosion",
+      "text": "La dégradation progressive d'une surface par des agents naturels.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-precipitation",
+      "wordId": "precipitation",
+      "text": "La pluie, la neige, la grêle. Ce qui tombe du ciel.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-ultraviolet",
+      "wordId": "ultraviolet",
+      "text": "Rayonnement invisible à l'œil nu, au-delà du violet.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-isotherme",
+      "wordId": "isotherme",
+      "text": "Ligne reliant des points de même température sur une carte.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-sociologie",
+      "wordId": "sociologie",
+      "text": "L'étude scientifique des sociétés humaines.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-lithosphere",
+      "wordId": "lithosphere",
+      "text": "La couche externe solide de la Terre.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-enumerate",
+      "wordId": "enumerate",
+      "text": "Lister un par un.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-desertification",
+      "wordId": "desertification",
+      "text": "Le processus par lequel une région fertile devient aride.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-eolienne",
+      "wordId": "eolienne",
+      "text": "Une machine qui transforme le vent en énergie.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-biodiversite",
+      "wordId": "biodiversite",
+      "text": "La variété du vivant sur Terre.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-urbanisation",
+      "wordId": "urbanisation",
+      "text": "Le phénomène par lequel les populations se concentrent en ville.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-tectonique",
+      "wordId": "tectonique",
+      "text": "La science des plaques qui composent la croûte terrestre.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-geologie",
+      "wordId": "geologie",
+      "text": "L'étude de la composition et de l'histoire de la Terre.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-astronomie",
+      "wordId": "astronomie",
+      "text": "La science qui étudie les astres et l'univers.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-ruissellement",
+      "wordId": "ruissellement",
+      "text": "L'écoulement de l'eau sur une surface.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-densite",
+      "wordId": "densite",
+      "text": "Le rapport entre une masse et le volume qu'elle occupe.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-evaporation",
+      "wordId": "evaporation",
+      "text": "Le passage d'un liquide à l'état gazeux.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-zenith",
+      "wordId": "zenith",
+      "text": "Le point le plus haut du ciel, directement au-dessus de l'observateur.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-lagon",
+      "wordId": "lagon",
+      "text": "Une étendue d'eau douce ou salée séparée de la mer par un récif.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-escarpement",
+      "wordId": "escarpement",
+      "text": "Une falaise abrupte formée par l'érosion ou une faille.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-stalactite",
+      "wordId": "stalactite",
+      "text": "Elle descend du plafond des grottes. Se souvenir : tient.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-yucatan",
+      "wordId": "yucatan",
+      "text": "Péninsule mexicaine. Berceau de la civilisation maya.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-equateur",
+      "wordId": "equateur",
+      "text": "La ligne imaginaire qui divise la Terre en deux hémisphères.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-univers",
+      "wordId": "univers",
+      "text": "Tout ce qui existe. L'espace, le temps, la matière.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-xenophile",
+      "wordId": "xenophile",
+      "text": "Celui qui aime ce qui vient d'ailleurs.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-oceanographie",
+      "wordId": "oceanographie",
+      "text": "L'étude scientifique des océans.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-uvala",
+      "wordId": "uvala",
+      "text": "Une dépression karstique formée par la fusion de plusieurs dolines.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-vegetation",
+      "wordId": "vegetation",
+      "text": "L'ensemble des plantes couvrant une région.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-relief",
+      "wordId": "relief",
+      "text": "Les formes du terrain : montagnes, vallées, plaines.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-terrasse",
+      "wordId": "terrasse",
+      "text": "Un replat artificiel ou naturel aménagé sur une pente.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-seisme",
+      "wordId": "seisme",
+      "text": "Un tremblement de terre.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-gravitation",
+      "wordId": "gravitation",
+      "text": "La force qui attire les corps entre eux.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-artificiel",
+      "wordId": "artificiel",
+      "text": "Ce qui est fabriqué par l'homme et non par la nature.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-reforestation",
+      "wordId": "reforestation",
+      "text": "Le replantation d'arbres sur des terres déboisées.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-delta",
+      "wordId": "delta",
+      "text": "L'embouchure d'un fleuve qui se divise en plusieurs bras.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-estuaire",
+      "wordId": "estuaire",
+      "text": "La partie d'un fleuve soumise à l'influence des marées.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-baobab",
+      "wordId": "baobab",
+      "text": "L'arbre qui stocke l'eau dans son tronc. Le géant des savanes.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-mangrove",
+      "wordId": "mangrove",
+      "text": "Forêt côtière tropicale aux racines plongeant dans l'eau salée.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-savane",
+      "wordId": "savane",
+      "text": "Vaste étendue herbeuse des régions tropicales.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-fleuve",
+      "wordId": "fleuve",
+      "text": "Un cours d'eau qui se jette dans la mer.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-maree",
+      "wordId": "maree",
+      "text": "Le mouvement régulier de la mer sous l'effet de la Lune.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-tornade",
+      "wordId": "tornade",
+      "text": "Un tourbillon de vent extrêmement puissant.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-cyclone",
+      "wordId": "cyclone",
+      "text": "Une tempête tropicale tournoyante.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-brousse",
+      "wordId": "brousse",
+      "text": "Zone végétale africaine entre forêt et savane.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-plateau",
+      "wordId": "plateau",
+      "text": "Une étendue plane en altitude.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-vallee",
+      "wordId": "vallee",
+      "text": "Un creux entre deux reliefs parcouru par un cours d'eau.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-montagne",
+      "wordId": "montagne",
+      "text": "Une élévation naturelle du terrain.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-glacier",
+      "wordId": "glacier",
+      "text": "Une masse de glace qui se déplace lentement.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-fjord",
+      "wordId": "fjord",
+      "text": "Une vallée glaciaire envahie par la mer. Typique de Norvège.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-archipel",
+      "wordId": "archipel",
+      "text": "Un groupe d'îles.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-peninsule",
+      "wordId": "peninsule",
+      "text": "Une terre entourée d'eau sur trois côtés.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-isthme",
+      "wordId": "isthme",
+      "text": "Une bande de terre étroite reliant deux continents.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-tropique",
+      "wordId": "tropique",
+      "text": "Ligne imaginaire parallèle à l'équateur.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-meridien",
+      "wordId": "meridien",
+      "text": "Ligne imaginaire reliant les pôles.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-parallele",
+      "wordId": "parallele",
+      "text": "Ligne imaginaire parallèle à l'équateur.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-altitude",
+      "wordId": "altitude",
+      "text": "La hauteur par rapport au niveau de la mer.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-profondeur",
+      "wordId": "profondeur",
+      "text": "La distance vers le bas. L'opposé de l'altitude.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-superficie",
+      "wordId": "superficie",
+      "text": "L'étendue d'une surface mesurée en km².",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-population",
+      "wordId": "population",
+      "text": "L'ensemble des habitants d'un territoire.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-migration",
+      "wordId": "migration",
+      "text": "Le déplacement d'une population d'un lieu à un autre.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-diaspora",
+      "wordId": "diaspora",
+      "text": "Une communauté dispersée loin de sa terre d'origine.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-frontiere",
+      "wordId": "frontiere",
+      "text": "La ligne qui sépare deux pays.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-capitale",
+      "wordId": "capitale",
+      "text": "La ville principale d'un État.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-metropole",
+      "wordId": "metropole",
+      "text": "Une grande ville qui rayonne sur sa région.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-banlieue",
+      "wordId": "banlieue",
+      "text": "La périphérie d'une grande ville.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-quartier",
+      "wordId": "quartier",
+      "text": "Une subdivision d'une ville.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-commerce",
+      "wordId": "commerce",
+      "text": "L'échange de biens et de services contre de l'argent.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-agriculture",
+      "wordId": "agriculture",
+      "text": "L'art de cultiver la terre pour nourrir les hommes.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-elevage",
+      "wordId": "elevage",
+      "text": "L'art d'élever des animaux pour leur lait, viande ou travail.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-peche",
+      "wordId": "peche",
+      "text": "L'activité qui consiste à capturer des poissons.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-industrie",
+      "wordId": "industrie",
+      "text": "L'ensemble des activités de transformation de matières premières.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-energie",
+      "wordId": "energie",
+      "text": "La capacité à produire un travail ou de la chaleur.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-petrole",
+      "wordId": "petrole",
+      "text": "L'or noir. Ressource fossile extraite du sous-sol.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-charbon",
+      "wordId": "charbon",
+      "text": "Roche noire combustible. À l'origine de la révolution industrielle.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-solaire",
+      "wordId": "solaire",
+      "text": "Qui vient du soleil.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-hydraulique",
+      "wordId": "hydraulique",
+      "text": "Qui utilise la force de l'eau.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-nucleaire",
+      "wordId": "nucleaire",
+      "text": "Qui utilise l'énergie du noyau de l'atome.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-transport",
+      "wordId": "transport",
+      "text": "Le déplacement de personnes ou de marchandises.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-infrastructure",
+      "wordId": "infrastructure",
+      "text": "Les équipements de base d'un territoire : routes, ponts, réseaux.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-telecommunication",
+      "wordId": "telecommunication",
+      "text": "La transmission d'informations à distance.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-satellite",
+      "wordId": "satellite",
+      "text": "Un objet placé en orbite autour de la Terre.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-atmosphere",
+      "wordId": "atmosphere",
+      "text": "La couche gazeuse qui enveloppe la Terre.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-ozone",
+      "wordId": "ozone",
+      "text": "La couche qui protège la Terre des rayons ultraviolets.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-rechauffement",
+      "wordId": "rechauffement",
+      "text": "L'augmentation progressive de la température moyenne de la Terre.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-biodegradable",
+      "wordId": "biodegradable",
+      "text": "Qui peut être décomposé par des organismes vivants.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-compost",
+      "wordId": "compost",
+      "text": "De la matière organique décomposée servant d'engrais naturel.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-irrigation",
+      "wordId": "irrigation",
+      "text": "L'apport artificiel d'eau aux cultures.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-barrage",
+      "wordId": "barrage",
+      "text": "Une construction retenant l'eau d'un cours d'eau.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-reservoir",
+      "wordId": "reservoir",
+      "text": "Un bassin artificiel stockant de l'eau.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-nappe",
+      "wordId": "nappe",
+      "text": "Une étendue d'eau souterraine.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-aquifere",
+      "wordId": "aquifere",
+      "text": "Une formation géologique contenant de l'eau souterraine.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-pluie",
+      "wordId": "pluie",
+      "text": "De l'eau qui tombe du ciel sous forme de gouttes.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-brume",
+      "wordId": "brume",
+      "text": "Un léger brouillard. La visibilité est réduite.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-givre",
+      "wordId": "givre",
+      "text": "De la glace qui se forme sur les surfaces par temps froid.",
+      "unlock": {
+        "initial": true
+      }
+    },
+    {
+      "id": "e-grele",
+      "wordId": "grele",
+      "text": "De la glace qui tombe du ciel sous forme de petites boules.",
+      "unlock": {
+        "initial": true
+      }
+    }
+  ]
+}

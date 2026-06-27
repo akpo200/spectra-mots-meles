@@ -1,0 +1,11 @@
+services:
+  spectra:
+    build: .
+    ports:
+      - "4100:4100"
+    env_file:
+      - .env
+    volumes:
+      - spectra-data:/app/data
+volumes:
+  spectra-data:

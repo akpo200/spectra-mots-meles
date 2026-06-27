@@ -1,0 +1,10 @@
+{
+  "cells": [
+    { "id": "SIGMA-1", "linkCode": "8NFKQX", "shift": 0, "password": "sigma1", "members": ["Feyçal", "Josie", "Yan", "Moïse", "Abdoul"] },
+    { "id": "ALPHA-2", "linkCode": "4KX9Q2", "shift": 7, "password": "alpha2", "members": ["Ivan", "letmein_", "Nella", "Clément", "Eli"] },
+    { "id": "DELTA-3", "linkCode": "HM7P8L", "shift": 13, "password": "delta3", "members": ["Hector", "Sensui", "Annael", "Martial", "Komlan"] },
+    { "id": "OMEGA-4", "linkCode": "X2NB4F", "shift": 19, "password": "omega4", "members": ["Ayawa M-A", "Traore", "Alfred", "William", "Timothée"] },
+    { "id": "KAPPA-5", "linkCode": "R9QW3T", "shift": 23, "password": "kappa5", "members": ["Josue", "Jojo", "Yann", "Lemuel", "Merveille"] },
+    { "id": "CYCY-4", "linkCode": "ZXTEST", "shift": 0, "password": "cycy4", "members": ["Cycy", "AgentTest1", "AgentTest2", "AgentTest3", "AgentTest4"] }
+  ]
+}

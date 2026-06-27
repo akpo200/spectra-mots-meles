@@ -1,0 +1,366 @@
+:root {
+  color: #00ff41;
+  background: #0a0a0a;
+  font-family: "JetBrains Mono", "Source Code Pro", Consolas, monospace;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: #0a0a0a; overflow: hidden; }
+button, input, select { font: inherit; }
+button { border: 1px solid #00ff41; background: #061607; color: #00ff41; padding: 10px 12px; cursor: pointer; }
+input, select { border: 1px solid #245c32; background: #050805; color: #00ff41; padding: 12px; outline: none; }
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(255,255,255,.035), rgba(255,255,255,.035) 1px, transparent 1px, transparent 4px);
+  mix-blend-mode: screen;
+  opacity: .25;
+  z-index: 10;
+}
+
+.briefing { min-height: 100vh; display: grid; place-items: center; padding: 24px; }
+.classified { width: min(680px, 100%); border: 1px solid #184f25; padding: 32px; text-align: center; background: #050805; box-shadow: 0 0 50px rgba(0,255,65,.08); }
+.classified h1 { font-size: 26px; line-height: 1.35; letter-spacing: 0; }
+.bars { color: #00ff41; white-space: nowrap; overflow: hidden; }
+.login { display: grid; gap: 14px; margin-top: 24px; }
+.danger { color: #ff3b30; }
+
+/* Grille de boutons des cellules sur la page d'accueil */
+.home-cells { display: grid; gap: 12px; margin-top: 28px; }
+.home-cell-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border: 1px solid #245c32;
+  background: #071107;
+  color: #00ff41;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+  cursor: pointer;
+}
+.home-cell-btn:hover {
+  background: #0c1e0c;
+  border-color: #00ff41;
+  box-shadow: 0 0 18px rgba(0,255,65,0.18);
+}
+.home-cell-id { font-weight: bold; font-size: 18px; letter-spacing: 0.08em; }
+.home-cell-arrow { font-size: 12px; color: #9bffaf; opacity: 0.75; }
+
+/* ─── INTERFACE DE JEU ─── */
+/* Layout principal : panneau gauche + grille droite + barre de statut */
+.game-shell {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(300px, 32vw) 1fr;
+  grid-template-rows: 1fr 40px;
+  background: #0a0a0a;
+}
+
+/* ─── PANNEAU GAUCHE (Enigmes + Message) ─── */
+.side-panel {
+  border-right: 2px solid #1a2e1a;
+  padding: 16px;
+  overflow-y: auto;
+  background: #0d120d;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.side-panel header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1a2e1a;
+  padding-bottom: 12px;
+  margin-bottom: 4px;
+}
+.side-panel header span { font-size: 13px; color: #7de890; letter-spacing: 0.08em; }
+.side-panel header strong { font-size: 22px; color: #00ff41; }
+.side-panel h2 { font-size: 11px; color: #7de890; margin: 16px 0 8px; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; }
+.secret { font-size: 15px; line-height: 1.7; word-break: break-word; color: #e0ffe8; letter-spacing: 0.12em; font-weight: bold; background: #071007; padding: 10px; border: 1px solid #1a3a1a; border-radius: 3px; }
+
+/* ─── CARTES D'ENIGMES ─── */
+.enigmas { display: grid; gap: 8px; }
+.enigma {
+  border: 1px solid #1a3a1a;
+  padding: 10px 12px;
+  background: #071007;
+  border-radius: 4px;
+  cursor: grab;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.enigma:hover { border-color: #00ff41; box-shadow: 0 0 8px rgba(0,255,65,0.12); }
+.enigma span { color: #7de890; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.6; }
+.enigma p { margin: 6px 0 0; font-size: 13px; line-height: 1.5; color: #d0f5d8; }
+.enigma-solved {
+  border-color: #1b5e20;
+  background: #040804;
+  cursor: default;
+}
+.enigma-solved:hover {
+  border-color: #1b5e20;
+  box-shadow: none;
+}
+.enigma-solution {
+  margin-top: 8px;
+  font-size: 11px;
+  color: #81c784;
+  font-family: monospace;
+}
+
+/* ─── ZONE DE GRILLE ─── */
+.grid-area {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: #0d120d; /* Fond assorti au panneau latéral pour le contour */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Grand rectangle d'encadrement style dossier d'enquête */
+.grid-frame-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 3px double #1a3a1a;
+  background: #f5f0e8; /* Fond papier crème à l'intérieur du cadre */
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+/* En-tête du cadre d'encadrement */
+.grid-frame-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: #0d120d;
+  border-bottom: 2px solid #1a3a1a;
+  color: #00ff41;
+  font-family: monospace;
+}
+.grid-frame-title {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+.grid-frame-hint {
+  font-size: 11px;
+  color: #7de890;
+  opacity: 0.8;
+}
+
+/* Conteneur du canvas dans le cadre */
+.grid-canvas-wrapper {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+  overflow: auto; /* Barre de défilement propre si nécessaire */
+  background: #f5f0e8;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.grid-canvas-wrapper canvas {
+  display: block;
+  cursor: crosshair;
+  image-rendering: pixelated;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  background: #f5f0e8;
+}
+
+/* ─── COORDONNÉES EN BAS DE GRILLE ─── */
+.coords {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  padding: 6px 12px;
+  background: #0d120d;
+  border: 1px solid #1a3a1a;
+  font-size: 11px;
+  color: #7de890;
+  border-radius: 3px;
+  font-family: monospace;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+/* ─── MESSAGE PAUSE ─── */
+.pause {
+  position: absolute;
+  bottom: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff3b30;
+  border: 2px solid #ff3b30;
+  background: rgba(0,0,0,0.85);
+  font-size: 22px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  letter-spacing: 0.1em;
+}
+
+/* ─── BARRE DE STATUT ─── */
+.status {
+  grid-column: 1 / -1;
+  border-top: 1px solid #1a2e1a;
+  padding: 0 16px;
+  background: #0d120d;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #7de890;
+}
+
+/* ─── MODAL DE TRANSMISSION ─── */
+.modal { position: fixed; inset: 0; display: grid; place-items: center; background: rgba(0,0,0,.8); z-index: 20; }
+.transmission {
+  width: min(560px, calc(100vw - 32px));
+  border: 1px solid #00ff41;
+  background: #050d05;
+  padding: 32px;
+  box-shadow: 0 0 60px rgba(0,255,65,.25);
+  border-radius: 4px;
+}
+.transmission h2 { margin-top: 0; color: #00ff41; letter-spacing: 0.06em; }
+.transmission p { line-height: 1.65; color: #d0f5d8; }
+
+/* ─── DASHBOARD DIRECTRICE ─── */
+.director { height: 100vh; overflow: auto; padding: 22px; background: #050805; }
+.director header h1 { margin: 0 0 8px; font-size: 24px; }
+.director-tools { display: grid; grid-template-columns: 220px minmax(240px, 1fr) auto auto minmax(220px, 260px) auto auto; gap: 10px; margin: 18px 0 10px; }
+.cell-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 20px 0; }
+.director-cell { border: 1px solid #1b5628; padding: 14px; border-radius: 4px; background: #071107; }
+.director-cell header { display: flex; justify-content: space-between; }
+.director-actions { display: flex; gap: 8px; margin-top: 12px; }
+.progress { height: 12px; background: #1d1d1d; margin: 10px 0; border-radius: 6px; overflow: hidden; }
+.progress span { display: block; height: 100%; background: linear-gradient(90deg, #00c853, #00ff41); border-radius: 6px; transition: width 0.4s ease; }
+.director-cell p, .event-log p { font-size: 12px; line-height: 1.35; color: #bfffc9; }
+.event-log { border-top: 1px solid #183d22; padding-top: 12px; }
+.event-log time { color: #7de890; margin-right: 8px; }
+
+/* ─── GRAIN D'ECRAN (écrans de briefing/accueil) ─── */
+.grain {
+  position: fixed;
+  top: -50%; left: -50%; right: -50%; bottom: -50%;
+  width: 200%; height: 200%;
+  background: transparent url('data:image/svg+xml,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.04"/%3E%3C/svg%3E') repeat;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 9;
+  animation: grain-dance 8s steps(10) infinite;
+}
+@keyframes grain-dance {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-1%, -1%); }
+  20% { transform: translate(-2%, 1%); }
+  30% { transform: translate(1%, -2%); }
+  40% { transform: translate(-1%, 3%); }
+  50% { transform: translate(-2%, 1%); }
+  60% { transform: translate(1%, 3%); }
+  70% { transform: translate(3%, -2%); }
+  80% { transform: translate(-1%, 1%); }
+  90% { transform: translate(2%, -3%); }
+}
+
+/* ─── TOASTS DE NOTIFICATION ─── */
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 100;
+  max-width: 300px;
+}
+.toast {
+  background: #071107;
+  border: 1px solid #00c853;
+  color: #d0f5d8;
+  padding: 10px 14px;
+  font-size: 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  animation: toast-in 0.25s ease-out forwards;
+}
+@keyframes toast-in {
+  from { transform: translateX(110%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* ─── BOUTON VALIDATION MOBILE ─── */
+.enigma-validate-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 7px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #0a1e0a;
+  border: 1px solid #00c853;
+  color: #00ff41;
+  cursor: pointer;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+  animation: pulse-border 1.5s infinite alternate;
+}
+@keyframes pulse-border {
+  from { border-color: #1a5c1a; }
+  to { border-color: #00ff41; box-shadow: 0 0 8px rgba(0,255,65,0.3); }
+}
+
+.enigma-locate-btn {
+  padding: 6px 12px;
+  font-size: 11px;
+  background: #0d120d;
+  border: 1px solid #1a3a1a;
+  color: #7de890;
+  cursor: pointer;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.enigma-locate-btn:hover {
+  border-color: #00ff41;
+  color: #00ff41;
+}
+
+/* ─── BOUTON SON ─── */
+.sound-toggle {
+  background: none;
+  border: none;
+  color: #7de890;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0 6px;
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+.sound-toggle:hover { opacity: 1; }
+
+/* ─── RESPONSIVE MOBILE ─── */
+@media (max-width: 820px) {
+  body { overflow: auto; }
+  .game-shell { height: auto; min-height: 100vh; grid-template-columns: 1fr; grid-template-rows: auto 65vh 40px; }
+  .side-panel { border-right: 0; border-bottom: 1px solid #1a2e1a; max-height: 35vh; }
+  .director-tools { grid-template-columns: 1fr; }
+}

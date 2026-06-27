@@ -1,0 +1,14 @@
+{
+  "missionId": "operation-festin",
+  "title": "OPÉRATION FESTIN",
+  "grid": { "rows": 50, "cols": 50, "seed": "SPECTRA-FESTIN-2026" },
+  "initialEnigmas": 120,
+  "estimatedDurationHours": [3, 6],
+  "antiCheat": {
+    "validationsPerMinuteYellow": 10,
+    "selectionsPerSecondRed": 30,
+    "tooFastValidationSeconds": 2,
+    "fiftyWordsMinutesRed": 5
+  },
+  "jwt": { "accessTokenTtlSeconds": 7200 }
+}

@@ -1,0 +1,8 @@
+{
+  "background": "#0A0A0A",
+  "terminal": "#00FF41",
+  "danger": "#FF3B30",
+  "muted": "#333333",
+  "font": "JetBrains Mono, Source Code Pro, monospace",
+  "soundEnabledDefault": true
+}
